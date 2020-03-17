@@ -3,16 +3,12 @@ import React, {useContext} from "react"
 import {Context} from "./Context"
 
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faAngleDown, faAngleUp, faPlay, faPause, faRedoAlt} from "@fortawesome/free-solid-svg-icons"
+import {faPlay, faPause, faRedoAlt} from "@fortawesome/free-solid-svg-icons"
 
 
 export default function App() {
     const {seconds, start, minutes, HandleAddBtn, sOriginal, bOriginal, act, restartBtn} = useContext(Context)
 
-    const downB = <FontAwesomeIcon value="down-b" icon={faAngleDown} />
-    const upB = <FontAwesomeIcon value="up-b" icon={faAngleUp} />
-    const downS = <FontAwesomeIcon value="down-s" icon={faAngleDown} />
-    const upS = <FontAwesomeIcon value="up-s" icon={faAngleUp} />
     const play = <FontAwesomeIcon icon={faPlay} />
     const pause = <FontAwesomeIcon icon={faPause} />
     const restart = <FontAwesomeIcon icon={faRedoAlt} />
